@@ -1,0 +1,70 @@
+/* FORMATAÇÃO PADRÃO */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+
+/* INTERFACE DO CRONOMETRO  */
+
+div#background {
+    height: 300px;
+    background-color: black;
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+
+}
+
+
+div#CRONOMETRO {
+    text-align: center;
+    position: relative;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* ESTILIZAÇÃO DOS BOTOES */
+
+
+div#botoes input[type="button"] {
+    height: 30px;
+    width: 100px;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border: 2px  solid black;
+    color: rgb(149, 0, 255);
+    border-radius: 5px;
+}
+
+div#botoes input[type="button"]:hover {
+    font-size: 21px;
+    color: rgb(172, 61, 252);    
+    transition: 0.5s;
+    
+}
+
+div#botoes input[type="button"]:focus {
+    outline: 0;
+}
+
+div#botoes input[type="button"]:active {
+    color: rgb(81, 1, 138);    
+    position: relative;
+    top: 2px;
+}
